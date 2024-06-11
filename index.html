@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="fa4/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-padding">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logrocket-logo.png" alt="LogRocket Logo" width="150" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="#">Dev</a></li>
+                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+                            <li><a class="dropdown-item" href="#">UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meetups</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <img src="logrocket-cover.jpg" alt ="cover" class="img-fluid">
+    </div>
+<main class="container mb-5"
+        <div class="article-title">
+            <h3 class="stories-title"><br>Featured Post</h3>
+            <div class="hori-line"><hr></div>
+            <br><br>
+        </div>
+<div class="row row-cols-1 row-cols-md-2 g-4 article-padding">
+    <div class="col">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="featured post images/kotlin-multithreading.jpg" class="img-fluid rounded-start full-height" alt="Kotlin multithreading">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h4 class="clard-title"><b>Kotlin multithreading: Comparing .wait(), .sleep(), and .delay()</b></h4>
+                            <p class="card-text">The wait, sleep and delay Kotlin multithreading functions control the flow and order of ...</p><br><br><br><br>
+                            <p class="card-text"><small class="text-body-secondary">Ivan Garza<br>Apr 12, 2023</small></p>
+                            <div class="text-end">
+                                <a class="card-text" href="hotlin.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="featured post images/simplify-codebase-swift-decorator-design-pattern.jpg" class="img-fluid rounded-start full-height" alt="Swift decorator">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h4 class="clard-title"><b>Simplify your codebase with Swift’s decorator design pattern</b></h4>
+                                <p class="card-text">In this article, we’ll delve into the power of decorator design patterns in Swift, learning how they can...</p><br><br>
+                                <p class="card-text"><small class="text-body-secondary">Yusuf Ahmed<br>Mar 29, 2023</small></p>
+                                <div class="text-end">
+                                    <a class="card-text" href="codebase.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="featured post images/Using-Cow-Rust-efficient-memory-utilization.png" class="img-fluid rounded-start full-height" alt="Cow Rust">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h4 class="clard-title"><b>Using Cow in Rust for efficient memory utilization</b></h4>
+                                <p class="card-text">Using the Cow data type in Rust can help reduce copying data unnecessarily, as well as...</p><br>
+                                <p class="card-text"><small class="text-body-secondary">Yashodhan Joshi<br>Mar 22, 2023</small></p>
+                                <div class="text-end">
+                                    <a class="card-text" href="cow.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="featured post images/writing-interactive-component-stories.png" class="img-fluid rounded-start full-height" alt="Interactive Component">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h4 class="clard-title"><b>Writing interactive component stories with Histoire in Vue 3 and TypeScript</b></h4>
+                                <p class="card-text">Learn how Historie, a Vue-focused Storybook alternative, can help you illustrate your...</p>
+                                <p class="card-text"><small class="text-body-secondary">Sebastian Weber<br>Mar 15, 2023</small></p>
+                                <div class="text-end">
+                                    <a class="card-text" href="typescript.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article-title">
+            <h3 class="article-title"><br>All Stories<br></h3>
+            <div class="hori-line"><hr></div>
+            <br>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 article-margin">
+            <div class="col">
+                <div class="card h-100">
+                        <img src="all stories images/how-to-represent-large-numbers-node-js-app.png" class="card-img-top" alt="Large number in Node.js app">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>How to represent large numbers in your Node.js app</b></h4>
+                        <p class="card-text">Manage large numbers in JavaScript using BigInt and popular third-party packages like Math.js, bignumber.js, and JS Big Decimal.</p>
+                        <p class="card-text"><small class="text-body-secondary">Joseph Mawa<br>Apr 14, 2023</small></p>
+                        <div class="text-end">
+                            <a class="card-text" href="numbers.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                        <img src="all stories images/build-customizable-segmented-control-swiftui.png" class="card-img-top" alt="SwiftUI customizable segmented control">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Build a SwiftUI customizable segmented control</b></h4>
+                        <p class="card-text">Learn how to use SwiftUI to build a customizable segmented control for your iOS apps. We explore limitations of the default SwiftUI Picker.</p>
+                        <p class="card-text"><small class="text-body-secondary">Alejandro Ulate Fallas<br>Apr 14, 2023</small></p>
+                        <div class="text-end">
+                            <a class="card-text" href="swift.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                        <img src="all stories images/11-figma-widgets.jpg" class="card-img-top" alt="Figma widgets">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>11 Figma widgets to speed up your workflow</b></h4>
+                        <p class="card-text">Here are 11 Figma widgets you and your team might appreciate - they're intented to help you save time and make your job easier.</p>
+                        <p class="card-text"><small class="text-body-secondary">Daniel Schwarz<br>Apr 14, 2023</small></p>
+                        <div class="text-end">
+                            <a class="card-text" href="figma.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <footer class="footer container-fluid footer-expand-lg bg-body-tertiary">
+            <div class="py-3 my-4">
+                <ul class="nav justify-content-center pb-3 mb-3">
+                    <li class="nav-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-android"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-linux"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-skype"></i></a><li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-windows"></i></a></li>
+                    <li class="nav-item"><a href="#"><i class="fa fa-apple"></i></a></li>
+                </ul>
+                <p class="text-center">Copyright@2024</p>
+            </div>
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="fa4/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-padding">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logrocket-logo.png" alt="LogRocket Logo" width="150" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="#">Dev</a></li>
+                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+                            <li><a class="dropdown-item" href="#">UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meetups</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+<body>
+    <main class="container">
+        <div class="row justify-content-center">
+                       <div class="col-md-6">
+                            <h5 class="card-title text-center text-md-start">Build a SwiftUI customizable segmented control</h5>
+                            <p class="card-text text-center text-md-start"><small class="text-body-secondary">Alejandro Ulate Fallas<br>Apr 14, 2023 </small></p>
+                                <img class="img-fluid"src="all stories images/build-customizable-segmented-control-swiftui.png" class="img-fluid rounded-start full-height" alt="Kotlin multithreading">
+                            <p >
+                                <br>
+                                During 2022, there were more than 4.5M apps and games in the App Store. The sheer volume of options makes it important for apps to provide a fresh, novel experience or find other ways of standing out.
+                                <br><br>
+Creating a unique interface can help make an app more attractive and go a long way toward increasing its user acquisition and retention. Customizing the default look and feel of the controls or creating unique tabs or a switch for dark/light themes can help make an application more appealing.
+<br><br>
+In this tutorial, we’ll explore how to create a customizable segmented control in SwiftUI. First, we’ll explore this scenario by discussing how to use the SwiftUI Picker with a segmented style. Then, we’ll explore its limitations. Finally, we’ll build our own picker that allows for easy customization and usage.
+<br><br>
+<b>Prerequisites</b>
+<br><br>
+To follow along with this guide, you should have the following:
+<ul>
+<li>Working knowledge of iOS development and Swift</li>
+<br>
+<li>Experience creating user interfaces using SwiftUI</li>
+</ul>
+<br>
+<b>Getting started</b>
+<br><br>
+To follow along with this SwiftUI Picker showcase project, see the open source code on GitHub. If you feel like jumping straight into a specific section, you can check out the different Git branches. There’s a specific branch for each section of this article.
+<br><br>
+Here’s a quick rundown of some important files you should be aware of:
+<br><br>
+<ul>
+<li>Domain: Defines business logic objects, in this case, enum structures; you won’t need to change anything in this directory</li>
+<li>Extensions: Contains a couple of handy extensions for this article; you won’t need to change anything in this directory</li>
+<li>UI: Stores all reusable components in the project. In this case, it contains PickerPlus, the customizable picker that we’ll build in the tutorial</li>figma
+<li>PickerLimitations.swift, StyledPicker.swift, DefaultPickerExamples.swift: SwiftUI Views that will help visualize the theory explained in this article</li>
+    </ul>
+<br>
+<b>Using the SwiftUI Picker</b>
+<br><br>
+Before we start creating custom component Views, let’s take a closer look at how the SwiftUI default Picker works. This will help us better understand how to build Views that support multiple configurations.
+<br><br>
+The SwiftUI Picker is a control for selecting from a set of mutually exclusive values. Let’s look at a few Picker examples: simple, complex, and segmented.
+
+
+                        </div>
+                    </div>
+            </div>
+          </div>
+    </main>
+<footer class="footer container-fluid footer-expand-lg bg-body-tertiary">
+    <div class="py-3 my-4">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-android"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-linux"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-skype"></i></a><li>
+            <li class="nav-item"><a href="#"><i class="fa fa-github"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-windows"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-apple"></i></a></li>
+        </ul>
+        <p class="text-center">Copyright@2024</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

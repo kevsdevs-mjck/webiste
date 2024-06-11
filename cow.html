@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="fa4/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-padding">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logrocket-logo.png" alt="LogRocket Logo" width="150" height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="#">Dev</a></li>
+                            <li><a class="dropdown-item" href="#">Product Management</a></li>
+                            <li><a class="dropdown-item" href="#">UX Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Podcast</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Meetups</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+<body>
+    <main class="container">
+        <div class="row justify-content-center">
+                       <div class="col-md-6">
+                            <h5 class="card-title text-center text-md-start">Using Cow in Rust for efficient memory utilization</h5>
+                            <p class="card-text text-center text-md-start"><small class="text-body-secondary">Yashodhan Joshi<br>Mar 22, 2023</small></p>
+                                <img class="img-fluid"src="featured post images/Using-Cow-Rust-efficient-memory-utilization.png" class="img-fluid rounded-start full-height" alt="Kotlin multithreading">
+                            <p >
+                                <br>
+                                Clone-on-write — or Cow for short — is a convenient wrapper that allows us to express the idea of optional ownership in Rust. In this article, we will learn what it exactly is, what problem it aims to solve, and how we can use it in our Rust code.
+                                <br><br>
+                                <b>The problem with occasional mutation</b>
+                                <br><br>
+                                Consider a case where you have a Vec of some elements. For the purposes of this example, consider that an Element has an ID that can uniquely identify it, and is large enough in size that duplicating it would require considerable memory.
+                                <br><br>
+                                In this case, we need to make sure the vector only has unique elements and does not contain any duplicates. To ensure this, we have a function that can filter the Vec.
+                                <br><br>
+                                As you can see, this simply keeps the IDs in a HashSet. When a new ID is encountered, it pushes the element into the Vec we return.
+                                <br><br>
+                                Let’s say we are expecting the input in our use case to frequently contain duplicates, or we know for sure that the input will always contain duplicates. In that case, we must create a temporary Vec, input all the elements whose IDs we have not seen before, and finally return this as the Vec of unique elements.
+                                <br><br>
+                                In situations where duplicates are common, this implementation is pretty efficient. But what if they are not so common?
+                                <br><br>
+                                When the input only infrequently contains duplicates, we would be creating the needless temporary Vec far more often than actually necessary. As a result, we would also be unnecessarily allocating that much extra memory and spending CPU time copying the elements over from the original to the new.
+                                <br><br>
+                                As we know, an Element is big in size, so copying it takes considerable memory. We also need to allocate and grow that much memory for the returned Vec.
+                                <br><br>
+                                Even if we took the input by value, not as a reference — in which case we would not have an overhead of calling clone on the elements — we would still need to allocate extra memory for the returned Vec and then free up the original after we are done copying.
+                                <br><br>
+                                This seems wasteful, considering that when there are no duplicates, we are essentially simply returning the input array.
+                                <br><br>
+                                Cases like this involve performing some costly operation on the input, but only when a certain condition is true. When that condition is so rare that the output is simply the input most of the time, Cow can help us to avoid the cost of the operation.
+                                
+                        </div>
+                    </div>
+            </div>
+          </div>
+    </main>
+<footer class="footer container-fluid footer-expand-lg bg-body-tertiary">
+    <div class="py-3 my-4">
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-android"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-linux"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-skype"></i></a><li>
+            <li class="nav-item"><a href="#"><i class="fa fa-github"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-windows"></i></a></li>
+            <li class="nav-item"><a href="#"><i class="fa fa-apple"></i></a></li>
+        </ul>
+        <p class="text-center">Copyright@2024</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
